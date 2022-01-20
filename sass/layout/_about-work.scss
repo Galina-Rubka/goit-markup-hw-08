@@ -1,0 +1,44 @@
+  .about-work {
+    padding-top: 94px;
+  }
+
+  .skills {
+    display: flex;
+    margin-right: 30px;
+  }
+  .skills__card:not(:last-child) {
+    margin-right: 30px;
+  }
+  .skills__card {
+    width: 270px;
+    margin: 0px;
+  }
+  
+   .skills__picture {
+    width: 270px;
+    height: 120px;
+    background-color: var(--border-them);
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin-bottom: 30px;
+  }
+
+  .skills__meta {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--text-primary);
+  }
+  
+  .skills__description {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--text-primary-second);
+    margin: 0px;
+  }

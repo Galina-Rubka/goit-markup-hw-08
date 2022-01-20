@@ -1,0 +1,142 @@
+
+  
+  .header {
+    padding: 25px 0;
+    border-bottom: 1px solid #ececec;
+  }
+
+  .header-box {
+    display: flex;
+    align-items: center;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+   
+    .header__nav {
+      display: flex;
+      align-items: center;
+      margin-right: auto;
+    }
+
+    .header__nav a {
+      color: var(--text-primary);
+      text-decoration: none;
+      font-weight: 500;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    .header__link {
+      font-family: Raleway;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 26px;
+      line-height: 1.2;
+      letter-spacing: 0.03em;
+      color: #000000;
+      text-decoration: none;
+      margin-right: 93px;
+    }
+
+    .header__logo {
+      color: var(--them-colour);
+    }
+
+
+
+  .navigation {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+
+    .navigation__item {
+      transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+     &:not(:last-child) {
+        margin-right: 50px;
+      }
+    }
+    
+    // .navigation__item:not(:last-child) {
+    //   margin-right: 50px;
+    // }
+
+    .navigation__link  {
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1px;
+      letter-spacing: 0.02em;
+      
+      &--active {
+       color:  var(--them-colour);
+    }
+
+      &:hover,&:focus {
+        color: var(--them-colour);
+      }
+    }
+
+
+ 
+
+  .nav-contact {
+    display: flex;
+    margin: 0px;
+    padding: 0px;
+  }
+ 
+    .nav-contact__list:not(:last-child) {
+      margin-right: 50px;
+    }
+    
+
+    .nav-contact__link {
+      display: flex;
+      align-items: center;
+      color: var(--text-primary-second);
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 1.1px;
+      letter-spacing: 0.02em;
+      transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+      &:hover,&:focus {
+        color: var(--them-colour);
+      }
+     
+     }
+    
+    .nav-contact__icon1 {
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      width: 16px;
+      height: 12px;
+ 
+      .nav-contact__link:hover &,
+      .nav-contact__link:focus & {
+         fill: var(--them-colour);
+         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+    }
+    
+    .nav-contact__icon2 {
+      justify-content: center;
+      align-items: center;
+      margin-right: 10px;
+      width: 10px;
+      height: 16px;
+
+      .nav-contact__link:hover &,
+      .nav-contact__link:focus & {
+          fill: var(--them-colour);
+          transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+      }
+      
+    }
+  
+
+
+

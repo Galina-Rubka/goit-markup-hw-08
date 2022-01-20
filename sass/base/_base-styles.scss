@@ -1,0 +1,31 @@
+.container {
+    align-items: center;
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+  }
+
+  .studio {
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--white-theme);
+  }
+  
+  .line {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+  
+  .line::after {
+    content: "";
+    display: block;
+    bottom: auto;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    background:  var(--them-colour);
+    border-radius: 4px;
+    margin-top: 80px;
+  }
