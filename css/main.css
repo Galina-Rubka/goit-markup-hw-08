@@ -42,12 +42,23 @@ h6 {
 }
 
 .container {
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  width: 1200px;
   padding: 0 15px;
   margin: 0 auto;
+}
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
 }
 
 .studio {
@@ -445,27 +456,46 @@ h6 {
 }
 
 .about-work {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 94px;
 }
 
-.skills {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .skills {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
 }
 
-.skills__card:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 480px) {
+  .skills__card {
+    width: 100%;
+    margin-bottom: 30px;
+  }
 }
-
-.skills__card {
-  width: 270px;
-  margin: 0px;
+@media screen and (min-width: 768px) {
+  .skills__card {
+    width: 354px;
+    margin: 15px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .skills__card {
+    width: 270px;
+  }
 }
 
 .skills__picture {
-  width: 270px;
+  width: 100%;
   height: 120px;
   background-color: var(--border-them);
   -webkit-box-pack: center;
@@ -488,6 +518,12 @@ h6 {
   text-transform: uppercase;
   margin-bottom: 10px;
   color: var(--text-primary);
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .skills__meta {
+    text-align: inherit;
+  }
 }
 
 .skills__description {
@@ -729,16 +765,67 @@ h6 {
   fill: #afb1b8;
 }
 
-.footer-container {
+.footer {
+  background: var(--them-colour-two);
+  padding: 60px 0;
+  text-decoration: none;
+  padding: 60px 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 1170px;
-  height: 140p;
 }
 
-.footer {
+.footer-box__info {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-box__info {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box__info {
+    margin-right: 70px;
+    text-align: left;
+  }
+}
+
+.footer-box {
+  display: block;
+}
+
+.footer-box__second {
+  text-align: center;
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .footer-box__second {
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-box__second {
+    margin-right: 70px;
+    text-align: left;
+  }
+}
+
+.footer__logo {
+  color: var(--them-colour);
+}
+
+.footer__link {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
+  color: #000000;
   text-decoration: none;
+  display: block;
+  margin-bottom: 20px;
 }
 
 .footer__street {
@@ -761,45 +848,6 @@ h6 {
 }
 .footer__contact:not(:last-child) {
   margin-bottom: 9px;
-}
-
-.footer-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
-}
-
-.footer__logo {
-  color: var(--them-colour);
-}
-
-.footer-background {
-  background: var(--them-colour-two);
-  padding: 200px 0;
-}
-
-.footer__link {
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-  color: #000000;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 20px;
-}
-
-.footer {
-  text-decoration: none;
-  padding: 60px 0px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
 }
 
 .footer-form__label {
@@ -863,8 +911,10 @@ h6 {
   margin-left: 12px;
 }
 
-.connect {
-  margin-left: 70px;
+@media screen and (min-width: 768px) {
+  .connect {
+    margin: 0 auto;
+  }
 }
 
 .connect__titles {

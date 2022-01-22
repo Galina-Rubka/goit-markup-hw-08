@@ -2,6 +2,8 @@
 .specificity {
     padding-top: 94px;
     padding-bottom: 94px;
+
+    
   }
   .specificity__head {
     font-family: Roboto;
@@ -13,6 +15,13 @@
     margin-bottom: 50px;
     letter-spacing: 0.03em;
     color: var(--text-primary);
+
+
+  //   @media screen and (max-width:480px) {
+  //     width: 480px;
+  //     display: none;
+      
+  //  }
   }
   .specificity__card {
     display: flex;
