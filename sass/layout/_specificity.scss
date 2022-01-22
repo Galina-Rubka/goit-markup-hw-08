@@ -3,6 +3,12 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
+    @media screen and (max-width: 1199px) {
+      padding: 0px;
+      display: none;
+      
+   }
+
     
   }
   .specificity__head {
@@ -17,11 +23,7 @@
     color: var(--text-primary);
 
 
-  //   @media screen and (max-width:480px) {
-  //     width: 480px;
-  //     display: none;
-      
-  //  }
+  
   }
   .specificity__card {
     display: flex;
