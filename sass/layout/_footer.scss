@@ -18,7 +18,7 @@
     margin-bottom: 60px;
     @media screen and (min-width: 768px) { 
       margin-bottom: 0;
-      margin: 0 auto;
+     
     }
     @media screen and (min-width: 1200px) {
       margin-right: 70px;
@@ -108,8 +108,8 @@ display: block;
     text-transform: uppercase;
     margin-bottom: 20px;
     color: var(--white-theme);
-    // margin-left: 94px;
-    @media screen and (min-width: 768px) {
+    
+    @media screen and (min-width: 1200px) {
       text-align: left;
     }
   }
@@ -163,11 +163,10 @@ display: block;
   }
 
   .connect {
-    // margin-left: 70px;
-
+    
       margin-bottom: 60px;
       @media screen and (min-width: 768px) {
-        margin: 0 auto;
+        // margin: 0 auto;
       }
     }
   
@@ -181,7 +180,10 @@ display: block;
     @media screen and (min-width: 480px) {
       text-align: center;
     }
-
+    @media screen and (min-width: 1200px){
+      text-align: left;
+    }
+    
   }
   .connect__list {
     display: flex;

@@ -753,8 +753,8 @@ h6 {
 }
 
 @media screen and (min-width: 1200px) {
-  .card-workers__box:not(:last-child) {
-    margin-right: 30px;
+  .card-workers__box {
+    width: 270px;
   }
 }
 
@@ -867,9 +867,16 @@ h6 {
   width: calc((100% - 6 * 15px) / 2);
 }
 
+@media screen and (min-width: 768px) {
+  .clients__card {
+    width: -webkit-calc((100% - 6 * 15px) / 3);
+    width: calc((100% - 6 * 15px) / 3);
+  }
+}
+
 @media screen and (min-width: 1200px) {
-  .clients__card .clients__card:last-child {
-    margin-right: 0;
+  .clients__card {
+    width: 170px;
   }
 }
 
@@ -933,7 +940,6 @@ h6 {
 @media screen and (min-width: 768px) {
   .footer-box__info {
     margin-bottom: 0;
-    margin: 0 auto;
   }
 }
 
@@ -1035,7 +1041,7 @@ h6 {
   color: var(--white-theme);
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1200px) {
   .footer-form__label {
     text-align: left;
   }
@@ -1113,12 +1119,6 @@ h6 {
   margin-bottom: 60px;
 }
 
-@media screen and (min-width: 768px) {
-  .connect {
-    margin: 0 auto;
-  }
-}
-
 .connect__titles {
   margin-bottom: 20px;
   color: var(--white-theme);
@@ -1131,6 +1131,12 @@ h6 {
 @media screen and (min-width: 480px) {
   .connect__titles {
     text-align: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .connect__titles {
+    text-align: left;
   }
 }
 
@@ -1386,10 +1392,6 @@ h6 {
           flex-wrap: wrap;
   padding: 0px;
   margin: 0px;
-  margin-top: -webkit-calc(-1 * var(--container-set));
-  margin-top: calc(-1 * var(--container-set));
-  margin-left: -webkit-calc(-1 * var(--container-set));
-  margin-left: calc(-1 * var(--container-set));
 }
 
 @media screen and (min-width: 768px) {
@@ -1401,12 +1403,33 @@ h6 {
   }
 }
 
-.card-set > .card-set__item {
-  -webkit-flex-basis: -webkit-calc(100% / 3 - var(--container-set));
-      -ms-flex-preferred-size: calc(100% / 3 - var(--container-set));
-          flex-basis: calc(100% / 3 - var(--container-set));
-  margin-left: var(--container-set);
-  margin-top: var(--container-set);
+@media screen and (min-width: 1200px) {
+  .card-set {
+    margin-top: -webkit-calc(-1 * var(--container-set));
+    margin-top: calc(-1 * var(--container-set));
+    margin-left: -webkit-calc(-1 * var(--container-set));
+    margin-left: calc(-1 * var(--container-set));
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .card-set > .card-set__item {
+    -webkit-flex-basis: -webkit-calc(100% / 2 - var(--container-set));
+        -ms-flex-preferred-size: calc(100% / 2 - var(--container-set));
+            flex-basis: calc(100% / 2 - var(--container-set));
+    margin-left: var(--container-set);
+    margin-top: var(--container-set);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .card-set > .card-set__item {
+    -webkit-flex-basis: -webkit-calc(100% / 3 - var(--container-set));
+        -ms-flex-preferred-size: calc(100% / 3 - var(--container-set));
+            flex-basis: calc(100% / 3 - var(--container-set));
+    margin-left: var(--container-set);
+    margin-top: var(--container-set);
+  }
 }
 
 .card-set__item a {
@@ -1479,6 +1502,12 @@ h6 {
   letter-spacing: 0.06em;
   color: var(--text-primary);
   margin-bottom: 4px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .text-box__name {
+    letter-spacing: normal;
+  }
 }
 
 .text-box__meta {

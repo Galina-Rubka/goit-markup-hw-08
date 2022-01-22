@@ -16,8 +16,7 @@
     padding: 0px;
     margin: 0px;
   
-    margin-top: calc(-1 * var(--container-set));
-    margin-left: calc(-1 * var(--container-set));
+    
 
     @media screen and (min-width: 480px){
 
@@ -29,13 +28,34 @@
     }
 
     @media screen and (min-width: 1200px){
-
+      margin-top: calc(-1 * var(--container-set));
+      margin-left: calc(-1 * var(--container-set));
     }
   }
+  // .card-set__item {
+  //   width: 354px;
+  //   height: 417px;
+
+  // }
+
+
   .card-set > .card-set__item {
-    flex-basis: calc(100% / 3 - var(--container-set));
-    margin-left: var(--container-set);
-    margin-top: var(--container-set);    
+    
+    
+    @media screen and (min-width: 768px){
+      flex-basis: calc(100% / 2 - var(--container-set));
+      margin-left: var(--container-set);
+      margin-top: var(--container-set);
+
+    }
+    @media screen and (min-width: 1200px){
+      flex-basis: calc(100% / 3 - var(--container-set));
+      margin-left: var(--container-set);
+      margin-top: var(--container-set);
+    }
+
+
+    
                 // --container-set: 30px;
   }
   .card-set__item a {
@@ -98,6 +118,12 @@
     letter-spacing: 0.06em;
     color: var(--text-primary);
     margin-bottom: 4px;
+
+    @media screen and (min-width: 768px) and (max-width: 1199px){
+      letter-spacing: normal;
+
+    }
+   
   }
   
   .text-box__meta {
