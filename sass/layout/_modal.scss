@@ -40,15 +40,17 @@
       height: 609px;
     }
 
-    @media screen and (min-width: 768px) and (max-width:1199px){
+    @media screen and (min-width: 768px) {
       top: 413px;
       left: 380px;
       position: absolute;
 
       @media screen and (min-width: 1200px){  
      width: 528px;
-    min-height: 581px;
-    position: fixed;
+      min-height: 581px;
+      position: relative;
+      top: 50%;
+      left: 22%;
      }
   //  width: 450px;  
 }

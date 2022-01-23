@@ -270,7 +270,7 @@ h6 {
 .section-hero {
   background: var(--them-colour-two);
   padding: 118px 0;
-  min-width: 100%;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/img-bgd.jpg");
@@ -294,7 +294,6 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .section-hero {
-    min-width: 100%;
     padding: 118px 204px;
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/tablet/hero-tablet.jpg");
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet.jpg");
@@ -309,13 +308,6 @@ h6 {
     background-image: -webkit-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet@2x.jpg");
     background-image: -o-linear-gradient(left, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet@2x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/tablet/hero-tablet@2x.jpg");
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .section-hero {
-    padding-top: 200px;
-    height: 600px;
   }
 }
 
@@ -389,7 +381,7 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) {
+@media screen and (min-width: 768px) {
   .modal {
     top: 413px;
     left: 380px;
@@ -397,11 +389,13 @@ h6 {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
+@media screen and (min-width: 768px) and (min-width: 1200px) {
   .modal {
     width: 528px;
     min-height: 581px;
-    position: fixed;
+    position: relative;
+    top: 50%;
+    left: 22%;
   }
 }
 
@@ -1492,6 +1486,8 @@ h6 {
     -webkit-flex-basis: -webkit-calc(100% / 2 - var(--container-set));
         -ms-flex-preferred-size: calc(100% / 2 - var(--container-set));
             flex-basis: calc(100% / 2 - var(--container-set));
+    margin-left: var(--container-set);
+    margin-top: var(--container-set);
     display: flex;
   }
 }

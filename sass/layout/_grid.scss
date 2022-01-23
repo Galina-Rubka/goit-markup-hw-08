@@ -40,13 +40,13 @@
 
 
   .card-set > .card-set__item {
-  
+ 
     
     @media screen and (min-width: 768px){
       display: flex;
       flex-basis: calc(100% / 2 - var(--container-set));
-      // margin-left: var(--container-set);
-      // margin-top: var(--container-set);
+      margin-left: var(--container-set);
+      margin-top: var(--container-set);
       display: flex;
     }
     @media screen and (min-width: 1200px){
@@ -60,6 +60,7 @@
                 // --container-set: 30px;
   }
   .card-set__item {
+    
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
   
@@ -78,11 +79,14 @@
   
  
   .card-set__link {
+    // margin-left: -15px;
     overflow: hidden;
     cursor: pointer;
     display: block;
     text-decoration: none;
-
+    // &:nth-child(2n) {
+    //   margin-left: -15px;
+    // }
     &:hover,
     &:focus {
       box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
