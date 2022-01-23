@@ -351,18 +351,13 @@ h6 {
   height: 100%;
   left: 0px;
   top: 0px;
+  padding: 15px;
+  overflow-y: scroll;
   z-index: 2;
   -webkit-transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 350ms cubic-bezier(0.4, 0, 0.2, 1);
   background: rgba(0, 0, 0, 0.2);
-}
-
-@media screen and (min-width: 480px) {
-  .backdrop {
-    padding: 15px;
-    overflow-y: scroll;
-  }
 }
 
 .modal {
@@ -384,10 +379,29 @@ h6 {
   padding: 40px;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 480px) and (max-width: 767px) {
   .modal {
-    position: absolute;
+    top: 347px;
+    left: -133px;
+    position: relative;
     width: 450px;
+    height: 609px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .modal {
+    top: 413px;
+    left: 380px;
+    position: absolute;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) and (min-width: 1200px) {
+  .modal {
+    width: 528px;
+    min-height: 581px;
+    position: fixed;
   }
 }
 
@@ -1471,11 +1485,14 @@ h6 {
 
 @media screen and (min-width: 768px) {
   .card-set > .card-set__item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
     -webkit-flex-basis: -webkit-calc(100% / 2 - var(--container-set));
         -ms-flex-preferred-size: calc(100% / 2 - var(--container-set));
             flex-basis: calc(100% / 2 - var(--container-set));
-    margin-left: var(--container-set);
-    margin-top: var(--container-set);
+    display: flex;
   }
 }
 
@@ -1489,7 +1506,7 @@ h6 {
   }
 }
 
-.card-set__item a {
+.card-set__item {
   -webkit-transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   -o-transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
