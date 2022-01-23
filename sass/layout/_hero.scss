@@ -1,7 +1,8 @@
 .section-hero {
     background: var(--them-colour-two);
     padding: 118px 0;
-    max-width: 1600px;
+    // max-width: 1600px;
+   min-width: 100%;
       margin-left: auto;
       margin-right: auto;
     background-image: linear-gradient(
@@ -11,17 +12,48 @@
       ),
       url("../images/img-bgd.jpg");
     background-position: center;
-    background-size: 1600px;
+    background-size: cover;
     background-repeat: no-repeat;
 
-    // @media screen and (min-width: 480){
-    //   padding: 118px 0;
-    //   max-width: 1600px;
-    //   margin-left: auto;
-    //   margin-right: auto;
-    // }
-      
-    
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/mobile/hero-mobile@2x.jpg");
+    }
+
+    @media screen and (min-width: 768px){
+    min-width: 100%;
+    padding: 118px 204px; 
+      background-image: linear-gradient(
+        to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+      ),
+      url("../images/tablet/hero-tablet.jpg");
+
+      @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+        background-image: linear-gradient(
+          to right,
+          rgba(47, 48, 58, 0.4),
+          rgba(47, 48, 58, 0.4)
+        ),
+        url("/images/tablet/hero-tablet@2x.jpg");
+      }
+
+    }
+
+    @media screen and (min-width: 1200px){
+      padding-top: 200px;
+      height: 600px;
+    }
+  
   }
   
   .section-hero__header {
@@ -35,18 +67,8 @@
     line-height: 1.62;
     letter-spacing: .06em;
     text-transform: uppercase;
-    // text-align: center;
+    text-align: center;
 
-    // font-weight: 900;
-    // font-size: 44px;
-    // line-height: 1.3;
-    // text-align: center;
-    // letter-spacing: 0.06em;
-    // text-transform: uppercase;
-    // color: var(--white-theme);
-    // width: 696px;
-    // margin: 0 auto;
-    // margin-bottom: 30px;
   }
 
   .section-hero > h1 .footer-background {
