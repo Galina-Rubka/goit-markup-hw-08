@@ -25,6 +25,8 @@
   }
   
   .line {
+  
+    
     position: relative;
     display: flex;
     align-items: center;
@@ -40,4 +42,11 @@
     background:  var(--them-colour);
     border-radius: 4px;
     margin-top: 80px;
+
+    @media screen and (max-width:767px) {
+      display: none;
+      
+   }
+
+
   }
