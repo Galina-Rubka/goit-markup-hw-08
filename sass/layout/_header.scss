@@ -1,9 +1,73 @@
 
   
   .header {
+    position: relative;
     padding: 25px 0;
     border-bottom: 1px solid #ececec;
+
+   
+  
   }
+                   // выпадающее меню
+
+ .menu-button .menu-button__icon-cross{
+   display: none;
+ }
+
+ .menu-button.is-open .menu-button__icon-cross{
+  display: block;
+}
+
+.menu-button.is-open .menu-button__icon-menu{
+  display: none;
+}
+
+.menu-button {
+  @media screen and (min-width:767px) {
+    display: none;
+     
+  }
+}
+
+.header__menu {
+  background-color: burlywood;
+  // display: none;
+  
+  // position: absolute;
+  // top: 100%;
+  // left: 0;
+  // width: 100%;
+  
+  // height:796px;
+
+  &.is-open {
+    display: block;
+
+    @media screen and (max-width:767px) {
+      display: none;
+  
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  
+  height:796px;
+       
+    }
+
+
+
+  }
+}
+
+
+
+
+
+
+
+
+
 
   .header-box {
     display: flex;
@@ -11,12 +75,30 @@
     width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
+
+
+    @media screen and (min-width:480px) {
+      width: 480px;
+      
+   }
+
+    @media screen and (min-width:768px) {
+      width: 768px;
+  }
+    @media screen and (min-width:1200px) {
+      width: 1200px;
+    }
   }
    
     .header__nav {
       display: flex;
       align-items: center;
       margin-right: auto;
+      @media screen and (min-width:768px) {
+        
+    }
+
+    
     }
 
     .header__nav a {
@@ -45,9 +127,18 @@
 
 
   .navigation {
-    display: flex;
+   
     margin: 0px;
     padding: 0px;
+    @media screen and (max-width:767px) {
+     display: none;
+      
+   }
+
+   @media screen and (min-width:768px) {
+    display: flex;
+     
+  }
   }
 
     .navigation__item {
@@ -58,9 +149,7 @@
       }
     }
     
-    // .navigation__item:not(:last-child) {
-    //   margin-right: 50px;
-    // }
+   
 
     .navigation__link  {
       font-weight: 500;
@@ -84,12 +173,23 @@
     display: flex;
     margin: 0px;
     padding: 0px;
+    @media screen and (min-width:768px) {
+      // display: none; коментировано нон
+       
+    }
   }
  
     .nav-contact__list:not(:last-child) {
       margin-right: 50px;
     }
     
+    .nav-contact__list {
+     @media screen and (max-width:768px) {
+      display: none;
+   
+}
+
+}
 
     .nav-contact__link {
       display: flex;

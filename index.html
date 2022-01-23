@@ -16,14 +16,28 @@
     <!-- Page header -->
         <header class="header">
             <div class="header-box">
-                <nav class="header__nav">
+              
                     <a href="/" class="header__link"><span class="header__logo">Web</span>Studio</a> 
+
+
+
+                    <button type="button" class="menu-button is-open" aria-controls="menu-container" aria-expanded="false" data-menu-button>
+                        <svg width="40px" height="40px" aria-label="Переключатель мобильного меню">
+                          <use class="menu-button__icon-menu" href="./images/icons.svg#icon-menu"></use>
+                          <use class="menu-button__icon-cross" href="./images/icons.svg#icon-cross"></use>
+                        </svg>
+                    </button>
+
+                <div class="header__menu is-open" id="menu-container" data-menu>
+                    <nav class="header__nav">
+                        
                     <ul class="navigation list-none">
                         <li class="navigation__item line"><a href="./index.html" class="navigation__link"><span class="navigation__link--active">Студия</span></a></li>
                         <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
                         <li class="navigation__item"><a href="" class="navigation__link">Контакты</a></li>
                     </ul>
-                </nav>
+                    </nav>
+                    <div>
                         <ul class="nav-contact list-none">
                             <li class="nav-contact__list">
                                 <a href="mailto:info@devstudio.com" class="nav-contact__link">
@@ -38,6 +52,22 @@
                                     </svg>+38 096 111 11 11</a>
                             </li>
                         </ul>
+                        <ul class="social-network list-none">
+                            <li class="social-network__item">
+                              <a class="social-network__link" lang="en" aria-label="Instagram." href="#">Instagram</a>
+                            </li>
+                            <li class="social-network__item">
+                              <a class="social-network__link" lang="en" aria-label="Twitter." href="#">Twitter</a>
+                            </li>
+                            <li class="social-network__item">
+                              <a class="social-network__link" lang="en" aria-label="Facebook." href="#">Facebook</a>
+                            </li>
+                            <li class="social-network__item">
+                              <a class="social-network__link" lang="en" aria-label="LinkedIn." href="#">LinkedIn</a>
+                            </li>
+                          </ul>
+                    </div>
+                 </div> 
             </div>
         </header>
     <!-- Section-back-ground-title -->
@@ -471,5 +501,6 @@
               
         </footer>
         <script src="./js/modal.js"></script>
+        <script src="./js/menu.js"></script>
 </body>
 </html>
