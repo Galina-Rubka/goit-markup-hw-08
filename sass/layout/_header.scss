@@ -23,6 +23,7 @@
 }
 
 .menu-button {
+  display: contents;
   @media screen and (min-width:767px) {
     display: none;
      
@@ -30,15 +31,11 @@
 }
 
 .header__menu {
-  background-color: burlywood;
-  // display: none;
-  
-  // position: absolute;
-  // top: 100%;
-  // left: 0;
-  // width: 100%;
-  
-  // height:796px;
+  width: 100%;
+  height: 796px;
+ 
+  background-color: orange;
+ 
 
   &.is-open {
     display: block;
@@ -46,7 +43,7 @@
     @media screen and (max-width:767px) {
       display: none;
   
-  position: absolute;
+ 
   top: 100%;
   left: 0;
   width: 100%;
@@ -61,7 +58,7 @@
 }
 
 
-
+        // выпадающее меню
 
 
 
@@ -72,7 +69,8 @@
   .header-box {
     display: flex;
     align-items: center;
-    width: 1200px;
+    justify-content: space-between;
+    // width: 1200px;
     padding: 0 15px;
     margin: 0 auto;
 
@@ -117,7 +115,12 @@
       letter-spacing: 0.03em;
       color: #000000;
       text-decoration: none;
-      margin-right: 93px;
+      // margin-right: 93px;
+
+
+      @media screen and (max-width:767px) {
+        // margin-right: 260px;
+    }
     }
 
     .header__logo {
@@ -130,17 +133,24 @@
    
     margin: 0px;
     padding: 0px;
-    @media screen and (max-width:767px) {
-     display: none;
+  //   @media screen and (max-width:767px) {
+  //    display: none;
       
-   }
+  //  }
 
    @media screen and (min-width:768px) {
     display: flex;
      
   }
   }
+   .social-network{
+    @media screen and (min-width:768px) {
+      display: none;
+       
+    }
 
+    
+   }
     .navigation__item {
       transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
