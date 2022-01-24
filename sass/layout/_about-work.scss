@@ -23,28 +23,27 @@
   .skills__card {
 
     margin: 0;
+    &:not(:last-child){
+
+      margin-bottom: 30px;
+    }
 
     @media screen and (min-width:480px) {
       width: 100%;
-      margin-bottom: 30px;
+     
     }
         
     @media screen and (min-width:768px){
       width: 354px;
       margin: 15px;
       justify-content: center;
-      // width: calc((100% - 4 * 15px) / 2);
+     
     }
    
     @media screen and (min-width:1200px) {
       width: 270px;
     }
-      // &:not(:last-child) {
-      //   @media screen and (min-width: 768px) {
-      //     margin: 15px;
-      //   }
-      // }
-   
+    
   }
   
    .skills__picture {
@@ -54,13 +53,11 @@
     justify-content: center;
     align-items: center;
     display: flex;
-    margin-bottom: 30px;
 
-    // @media screen and (min-width:768px){
-    //   width: calc((100% - 4 * 15px) / 2);
+    &:not(:last-child){
 
-    // }
-    
+      margin-bottom: 30px;
+    }
     
   }
 

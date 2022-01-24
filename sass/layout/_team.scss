@@ -77,16 +77,18 @@
     border-radius: 0px 0px 4px 4px;
     background-color: var(--primary-background-color);
     
+
+    @media screen and (max-width: 767px){
     &:not(:last-child) {
       margin-bottom: 30px;
     }
-    
+  }
 
 
     @media screen and (min-width: 768px){
       width: calc((100% - 4 * 15px) / 2);
       margin: 15px;
-      margin-bottom: 30px;
+      // margin-bottom: 30px;
     }
 
 
