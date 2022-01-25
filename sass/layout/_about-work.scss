@@ -3,10 +3,8 @@
     padding-top: 60px;
     padding-bottom: 60px;
   
-  @media screen and (min-width: 1200px){ 
+  @media screen and (min-width: 1200px) { 
     padding-top: 94px;
-    padding-bottom: 94px;
-   
   }
 }
 
@@ -23,9 +21,13 @@
   .skills__card {
 
     margin: 0;
-    &:not(:last-child){
 
-      margin-bottom: 30px;
+    @media screen and (max-width:767px) {
+     
+      &:not(:last-child){
+
+        margin-bottom: 30px;
+      }
     }
 
     @media screen and (min-width:480px) {
